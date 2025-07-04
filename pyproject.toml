@@ -6,8 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "ai-reqs"
 version = "0.1.0"
 authors = [
-  # Replace with your name and email
-  { name="Your Name", email="you@example.com" },
+  { name="Thomas Manjooran", email="thomasmanjooran20@gmail.com" },
 ]
 description = "Generate requirements.txt for Python projects, using an AI to resolve complex and ambiguous dependencies."
 readme = "README.md"

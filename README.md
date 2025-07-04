@@ -24,19 +24,29 @@ pip install ai-reqs
 1.  **Get a Gemini API Key:**
     * Go to [Google AI Studio](https://aistudio.google.com/app/apikey) and create an API key.
 
-2.  **Set the API Key:**
+2.  **Set the API Key (Optional):**
     You can either set it as an environment variable (recommended) or pass it as an argument.
-
+    **On macOS / Linux:**
     ```bash
     # Recommended: Set as an environment variable
     export GEMINI_API_KEY="YOUR_API_KEY_HERE"
     ```
 
+    **On Windows:**
+    ```bash
+    # Recommended: Set as an environment variable
+    set GEMINI_API_KEY="YOUR_API_KEY_HERE"
+    ```
+
 3.  **Run `ai-reqs`:**
     Navigate to your project's root directory in your terminal and run the command:
-
-    ```bash
+     ```bash
     ai-reqs
+    ```
+
+    Alternatively, you can pass the key directly as an argument (avoiding step 2):
+    ```bash
+    ai-reqs --api-key YOUR_API_KEY
     ```
 
     That's it! A clean `requirements.txt` will be generated in your project directory.

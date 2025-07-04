@@ -11,9 +11,9 @@ authors = [
 description = "Generate requirements.txt for Python projects, using an AI to resolve complex and ambiguous dependencies."
 readme = "README.md"
 requires-python = ">=3.8"
+license = "MIT" 
 classifiers = [
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Topic :: Software Development",
     "Topic :: Terminals",
@@ -25,5 +25,9 @@ classifiers = [
 
 [project.scripts]
 # This creates the command-line tool.
-# When a user installs your package, they can run "ai-reqs" from the command line.
+# When a user installs the package, they can run "ai-reqs" from the command line.
 ai-reqs = "ai_reqs_generator.main:main"
+
+[tool.setuptools.packages.find]
+# Explicitly find and include only your package
+include = ["ai_reqs_generator"]

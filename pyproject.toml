@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-reqs"
+version = "0.1.0"
+authors = [
+  # Replace with your name and email
+  { name="Your Name", email="you@example.com" },
+]
+description = "Generate requirements.txt for Python projects, using an AI to resolve complex and ambiguous dependencies."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development",
+    "Topic :: Terminals",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/thomasmanjooran/ai-reqs" 
+"Bug Tracker" = "https://github.com/thomasmanjooran/ai-reqs/issues"
+
+[project.scripts]
+# This creates the command-line tool.
+# When a user installs your package, they can run "ai-reqs" from the command line.
+ai-reqs = "ai_reqs_generator.main:main"

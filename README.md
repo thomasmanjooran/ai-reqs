@@ -1,6 +1,6 @@
 # AI-Reqs: The Intelligent requirements.txt Generator
 
-**Tired of messy `requirements.txt` files? Frustrated that tools like `pipreqs` fail on your complex data science projects and Jupyter Notebooks?**
+**Tired of messy `requirements.txt` files? Frustrated that tools like `pipreqs` fail on your complex python projects and Jupyter Notebooks?**
 
 `ai-reqs` is a next-generation dependency scanner for Python that uses the power of Google's Gemini AI to solve the problems other tools can't. It intelligently scans your project, including `.py` files and `.ipynb` notebooks, and generates a clean, accurate `requirements.txt` file.
 
@@ -75,7 +75,7 @@ options:
 The tool scans all Python scripts and Jupyter Notebooks in your project to find all `import` statements. It then uses a hybrid approach to find the correct package for each import:
 
 1.  It first checks your local Python environment's metadata.
-2.  For any import it can't resolve locally (like `sklearn` or `cv2`), it queries the Gemini API to get the correct `pip` package name.
+2.  For any import it can't resolve locally (like `sklearn` or `cv2`, which have different package names), it queries the Gemini API to get the correct `pip` package name.
 3.  Finally, it generates a `requirements.txt` file with the correct package names and their currently installed versions.
 
 ## Contributing
